@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
+import { getLocation } from "./location-util";
 
 export async function GET() {
-  return NextResponse.json("hellow world..");
+  const getLocations = getLocation();
+  return NextResponse.json(getLocations);
 }

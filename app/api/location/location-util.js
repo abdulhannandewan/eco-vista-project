@@ -40,3 +40,4 @@ const getLocatonByName = (Location) => {
   );
   return location || {};
 };
+export { getLocation, getLocatonByName };

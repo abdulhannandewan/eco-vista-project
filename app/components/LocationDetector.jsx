@@ -26,6 +26,7 @@ const LocationDetector = () => {
       setLoading(false);
       console.error("Geolocation is not supported by this browser.");
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathName, searchParams]);
 
   return (
@@ -33,7 +34,7 @@ const LocationDetector = () => {
       {loading && (
         <div>
           <Image
-            src="/images/tinipng_gradient.png"
+            src="/images/tinypng_gradient.png"
             alt="loading"
             width={500}
             height={500}
